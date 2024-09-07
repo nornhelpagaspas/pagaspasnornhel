@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>GhsotAce Saint</title>
+    <style>
+        body {
+            background-color: #000;
+        }
+        .comment-form {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #000;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #87CEEB;
+        }
+        .comment-form label, .comment-form input, .comment-form textarea {
+            color: #87CEEB; 
+        }
+        .comment-form input[type="text"], .comment-form input[type="email"], .comment-form textarea {
+            color: #000;
+        }
+        .comment-form input[type="submit"] {
+            background-color: #87CEEB;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .comment-form input[type="submit"]:hover {
+            background-color: #66CCCC
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <nav>
+            <div class="nav-container">
+              <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                  Ghost <span>Ace</span>
+              </div>
+              <div class="links">
+                  <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="Gamer.html">Home</a></div>
+                  <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="videos.html">Videos</a></div>
+                  <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="Comment.html">Comments</a></div>
+          </div>
+          <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+      </div>
+          <div class="dropdown">
+              <div class="links">
+                  <a href="Gamer.html">Home</a>
+                  <a href="videos.html">Videos</a>
+                  <a href="Comment.html">Comments</a>
+                  <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+              </div>
+          </div>
+    <div class="comment-form">
+        <h2 style="color: #87CEEB;">Leave a comment about my videos!</h2>
+        <form id="comment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" style="color: #000;"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" style="color: #000;"><br><br>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" style="color: #000;"></textarea><br><br>
+            <label for="send-to">Send to:</label>
+            <select id="send-to" name="send-to">
+                <option value="gmail">Gmail</option>
+                <option value="facebook">Facebook</option>
+            </select><br><br>
+            <input type="submit" value="Send Comment">
+        </form>
+    </div>
+    <footer style="color: #87CEEB;">&copy;GhostAce Saint</footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset:0});
+      </script>
+      <script src="comment.js"></script>
+    <script>
